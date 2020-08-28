@@ -33,6 +33,24 @@ const Routes = ({ isSignedIn = false }) => {
             name="Order"
             options={{ title: 'Novo Pedido' }}
           />
+          <Stack.Screen
+            component={ProductList}
+            name="ProductList"
+            options={{
+              title: 'Lista de Produtos',
+              headerRight: () => (
+                <Link
+                  to="/BuyCart"
+                  style={{
+                    color: '#1565C0',
+                    marginRight: 10,
+                  }}
+                >
+                  Próximo
+                </Link>
+              ),
+            }}
+          />
         </Stack.Navigator>
       )}
     </NavigationContainer>
