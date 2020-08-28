@@ -21,6 +21,13 @@ const Routes = ({ isSignedIn = false }) => {
         </Stack.Navigator>
       ) : (
         <Stack.Navigator>
+          <Stack.Screen
+            component={TabRoutes}
+            name="TabRoutes"
+            options={{
+              headerShown: false,
+            }}
+          />
         </Stack.Navigator>
       )}
     </NavigationContainer>
