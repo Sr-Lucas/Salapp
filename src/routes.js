@@ -51,6 +51,24 @@ const Routes = ({ isSignedIn = false }) => {
               ),
             }}
           />
+          <Stack.Screen
+            component={BuyCart}
+            name="BuyCart"
+            options={{
+              title: 'Carrinho de compras',
+              headerRight: () => (
+                <Link
+                  to="/FinishPurchase"
+                  style={{
+                    color: '#1565C0',
+                    marginRight: 10,
+                  }}
+                >
+                  Finalizar
+                </Link>
+              ),
+            }}
+          />
         </Stack.Navigator>
       )}
     </NavigationContainer>
