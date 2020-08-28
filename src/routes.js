@@ -28,6 +28,11 @@ const Routes = ({ isSignedIn = false }) => {
               headerShown: false,
             }}
           />
+          <Stack.Screen
+            component={Order}
+            name="Order"
+            options={{ title: 'Novo Pedido' }}
+          />
         </Stack.Navigator>
       )}
     </NavigationContainer>
