@@ -69,6 +69,13 @@ const Routes = ({ isSignedIn = false }) => {
               ),
             }}
           />
+          <Stack.Screen
+            component={FinishPurchase}
+            name="FinishPurchase"
+            options={{
+              title: 'Finalizar Compra',
+            }}
+          />
         </Stack.Navigator>
       )}
     </NavigationContainer>
